@@ -1,0 +1,17 @@
+{
+  "name": "@local/eth-optimism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type":"module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eth-optimism/contracts": "^0.6.0",
+    "@eth-optimism/sdk": "^3.0.0",
+    "@local/ethers": "file:../ethers@5.7.0"
+  }
+}
