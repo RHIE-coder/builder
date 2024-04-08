@@ -1,7 +1,15 @@
 # common
+.vscode
 .DS_Store
+node_modules
+
 
 # javascript
 .env
 node_modules
 .vscode
+
+# pdf
+md/*
+!md/.gitkeep
+example/test.pd
