@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "module": "CommonJS",
+    "target": "ES2020",
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "./types",
+
+    "baseUrl": "./",
+    "paths": {
+      "@utils/*": ["./src/utils/*"]
+    },
+    "rootDir": "./",
+    "outDir": "./build",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["./src/**/*.ts"]
+}

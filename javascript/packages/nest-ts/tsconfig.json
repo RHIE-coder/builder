@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "module": "CommonJS",
+    "target": "ES2020",
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "strictNullChecks": true,
+    "strictPropertyInitialization":true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata":true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@utils/*": ["./src/utils/*"]
+    },
+    "rootDir": "./",
+    "outDir": "./build",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./build", "./types"]
+}
