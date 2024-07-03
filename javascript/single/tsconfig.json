@@ -1,0 +1,35 @@
+{
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+        "useDefineForClassFields": true,
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "target": "es2021",
+        "skipLibCheck": true,
+        "declaration": true,
+        "declarationDir": "./types",
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        "baseUrl": "./",
+        "paths": {
+            "~/loader/*": ["./src/loader/*"],
+            "~/manager/*": ["./src/manager/*"],
+            "~/types/*": ["./src/types/*"],
+            "~/scripts/*": ["./src/scripts/*"]
+        },
+        "rootDir": "./",
+        "outDir": "./build",
+
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": ["./src/**/*.ts"]
+}
