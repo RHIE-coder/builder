@@ -1,0 +1,29 @@
+{
+    "name": "filebeat-auto-container-mapping",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+        "up": "ts-node src/scripts/compose-up.ts",
+        "gen": "ts-node src/scripts/generator.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.14.9",
+        "nodemon": "^3.1.4",
+        "ts-jest": "^29.1.5",
+        "ts-node": "^10.9.2",
+        "tsc-alias": "^1.8.10",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.5.2"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "jest": "^29.7.0"
+    }
+}
