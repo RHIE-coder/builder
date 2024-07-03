@@ -1,0 +1,16 @@
+{
+  "name": "@builder/ts-base",
+  "version": "0.0.0",
+  "main": "./build/src/index.js",
+  "types": "./types/src/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' -r tsconfig-paths/register src/index.ts",
+    "build": "tsc -p ./tsconfig.json && tsc-alias -p ./tsconfig.json",
+    "lint": "eslint . --ext ts --fix --report-unused-disable-directives --max-warnings 0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@builder/common": "^0.0.0"
+  }
+}
